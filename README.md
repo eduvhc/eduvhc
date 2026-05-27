@@ -52,8 +52,8 @@ psu: Corsair RM1000e 1000W (ATX 3.1, Cybenetics Gold, fully modular)
 
 ram:
   total: 128 GB
-  type: DDR5-6000 (Corsair Vengeance)
-  config: 4x32 GB Dual Channel
+  model: Corsair Vengeance RGB DDR5-6000 CL30 (CMH64GX5M2B6000Z30)
+  config: 4x32 GB Dual Channel (2 kits)
 
 storage:
   - Crucial T705 2 TB (PCIe 5.0, 14.5 GB/s read)
