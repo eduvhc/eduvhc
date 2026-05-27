@@ -93,5 +93,8 @@ earbuds:
   features: ANC, Adaptive Audio, Transparency, Spatial Audio
   rating: IP54
   battery: 4h (20h with case)
+
+charger:
+  model: Anker 100W USB-C GaN (3-port, smart display, touch control)
 ```
 
