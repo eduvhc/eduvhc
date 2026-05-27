@@ -202,9 +202,9 @@ bag:
 
 ```yaml
 # network.yml
-isp: Starlink
+isp: Starlink (CGNAT, no public IPv4)
 local_dns: Pi-hole (pwuserver)
-vpn: Tailscale
+vpn: Tailscale  # used to bypass CGNAT for remote access
 ```
 
 </details>
