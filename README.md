@@ -14,18 +14,53 @@ Software engineer building .NET microservices platforms.
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
 ```yaml
-# machine.yml
+# laptop.yml
 device:
   model: MacBook Pro (2025)
   chip: Apple M5
   cores: 10 (4 performance + 6 efficiency)
   memory: 24 GB unified
+  storage: 1 TB SSD
   os: macOS 26 (Tahoe)
 
 dev_setup:
   shell: zsh
   editor: JetBrains Rider / VS Code
   containers: OrbStack
-  terminal: macOS Terminal
+```
+
+```yaml
+# desktop.yml
+device:
+  model: Custom build (MSI MAG X870E TOMAHAWK WIFI)
+  os: Windows 11 Pro
+
+cpu:
+  model: AMD Ryzen 9 9950X3D
+  architecture: Zen 5
+  cores: 16
+  threads: 32
+  boost_clock_mhz: 5700
+
+gpu:
+  model: AMD Radeon RX 9070 XT
+  architecture: RDNA 4
+  vram: 16 GB GDDR6
+
+ram:
+  total: 128 GB
+  type: DDR5-6000 (Corsair Vengeance)
+  config: 4x32 GB Dual Channel
+
+storage:
+  - Crucial T705 2 TB (PCIe 5.0, 14.5 GB/s read)
+  - WD_BLACK SN7100 2 TB (PCIe 4.0)
+
+network:
+  wifi: Wi-Fi 7 (Qualcomm FastConnect 7800)
+
+monitors:
+  - Dell U2724D 27" QHD 120Hz IPS Black (DisplayPort)
+  - Dell U2724D 27" QHD 120Hz IPS Black (HDMI)
 ```
 
