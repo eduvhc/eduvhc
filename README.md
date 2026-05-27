@@ -43,7 +43,7 @@ cpu:
   boost_clock_mhz: 5700
 
 gpu:
-  model: AMD Radeon RX 9070 XT
+  model: Sapphire NITRO+ Radeon RX 9070 XT
   architecture: RDNA 4
   vram: 16 GB GDDR6
 
@@ -62,5 +62,10 @@ network:
 monitors:
   - Dell U2724D 27" QHD 120Hz IPS Black (DisplayPort)
   - Dell U2724D 27" QHD 120Hz IPS Black (HDMI)
+
+peripherals:
+  keyboard: RK ROYAL KLUDGE M87 (75% gasket, hot-swap, wireless)
+  mouse: ProtoArc EM11 vertical ergonomic (Bluetooth + 2.4GHz)
+  headset: HyperX Cloud Alpha Wireless 2 (2.4GHz / Bluetooth)
 ```
 
