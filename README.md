@@ -13,6 +13,13 @@ Software engineer building .NET microservices platforms.
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
+---
+
+#### Setup
+
+<details>
+<summary><b>Laptop</b> — MacBook Pro M5 (24 GB)</summary>
+
 ```yaml
 # laptop.yml
 device:
@@ -28,6 +35,11 @@ dev_setup:
   editor: JetBrains Rider / VS Code
   containers: OrbStack
 ```
+
+</details>
+
+<details>
+<summary><b>Desktop</b> — Ryzen 9 9950X3D · RX 9070 XT · 128 GB DDR5</summary>
 
 ```yaml
 # desktop.yml
@@ -89,9 +101,71 @@ peripherals:
     mpn: AJ5C7AA
 ```
 
+</details>
+
+<details>
+<summary><b>Server</b> — Beelink Mini S12 · Intel N100 · Ubuntu 24.04</summary>
+
 ```yaml
-# cross-platform.yml
-mobile:
+# server.yml
+host:
+  hostname: pwuserver
+  model: Beelink Mini S12 (AZW MINI S)
+  os: Ubuntu 24.04 LTS (Noble Numbat)
+  kernel: Linux 6.8
+
+cpu:
+  model: Intel N100
+  architecture: Alder Lake-N
+  cores: 4
+  base_clock_ghz: 2.8
+  boost_clock_ghz: 3.4
+  tdp_w: 6
+
+gpu: Intel UHD Graphics (Alder Lake-N, integrated)
+
+memory:
+  total: 16 GB
+  type: DDR4-3200 SODIMM
+
+storage:
+  - role: system (SATA, internal)
+    model: 512 GB SATA SSD (Beelink OEM)
+    firmware: SN16525
+  - role: bulk storage (USB 2.5" HDD)
+    drive:
+      model: Seagate Mobile HDD 2 TB 5400rpm
+      mpn: ST2000LM007 (1R8174-070)
+    enclosure:
+      model: AISENS ASE-2525PB
+      lot: V2410
+  - role: external SSD (USB 2.5")
+    drive:
+      model: Samsung SSD 860 EVO 500 GB
+      mpn: MZ-76E500B
+    enclosure:
+      model: Verbatim 53100
+
+network:
+  lan: 1 GbE (enp1s0)
+  vpn: Tailscale
+
+services:
+  - Docker + containerd
+  - Pi-hole (DNS / ad-block)
+  - LocalStack (AWS emulator)
+  - OpenObserve (logs / observability)
+  - ps3netsrv (PS3 remote disc server)
+```
+
+</details>
+
+<details>
+<summary><b>Mobile & accessories</b> — iPhone 17 · WH-1000XM6 · AirPods 4 ANC</summary>
+
+```yaml
+# mobile.yml
+phone:
   model: iPhone 17 (Black, base)
   chip: Apple A19 (3nm, 6-core CPU, 5-core GPU)
   memory: 8 GB RAM
@@ -119,42 +193,18 @@ charger:
 bag:
   model: MOSISO Laptop Shoulder Bag 15.6" (Briefcase, 2 raised + 1 flap + 1 horizontal pocket)
   asin: B09J19C59Y
-
-internet:
-  isp: Starlink
 ```
+
+</details>
+
+<details>
+<summary><b>Network</b> — Starlink</summary>
 
 ```yaml
-# server.yml
-host:
-  hostname: pwuserver
-  os: Ubuntu 24.04 LTS (Noble Numbat)
-  kernel: Linux 6.8
-
-cpu:
-  model: Intel N100
-  cores: 4
-  base_clock_ghz: 2.8
-  boost_clock_ghz: 3.4
-  tdp_w: 6
-
-gpu: Intel UHD (Alder Lake-N integrated)
-
-memory: 16 GB
-
-storage:
-  - 512 GB SSD (system)
-  - 465 GB Samsung 860 EVO SSD
-  - 1.8 TB HDD (bulk storage)
-
-network:
-  lan: 1 GbE
-  vpn: Tailscale
-
-services:
-  - Docker + containerd
-  - Pi-hole (DNS / ad-block)
-  - LocalStack (AWS emulator)
-  - OpenObserve (logs / observability)
-  - ps3netsrv
+# network.yml
+isp: Starlink
+local_dns: Pi-hole (pwuserver)
+vpn: Tailscale
 ```
+
+</details>
