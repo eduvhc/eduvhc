@@ -31,12 +31,13 @@ dev_setup:
 
 ```yaml
 # desktop.yml
-device:
-  model: Custom build (MSI MAG X870E TOMAHAWK WIFI)
+motherboard:
+  model: MSI MAG X870E TOMAHAWK WIFI
   os: Windows 11 Pro
 
 cpu:
   model: AMD Ryzen 9 9950X3D
+  mpn: 100-100001286WOF
   architecture: Zen 5
   cores: 16
   threads: 32
@@ -44,29 +45,38 @@ cpu:
 
 gpu:
   model: Sapphire NITRO+ Radeon RX 9070 XT Gaming OC
+  mpn: 11348-01-20G
   architecture: RDNA 4
   vram: 16 GB GDDR6
 
-case: Corsair Frame 4000D (Mid-Tower ATX, high airflow)
-psu: Corsair RM1000e 1000W (ATX 3.1, Cybenetics Gold, fully modular)
+case:
+  model: Corsair Frame 4000D (Mid-Tower ATX, high airflow)
+  mpn: CC-9011260-WW
+
+psu:
+  model: Corsair RM1000e 2025 (ATX 3.1, Cybenetics Gold, fully modular)
+  mpn: CP-9020297-NA
 
 ram:
   total: 128 GB
-  model: Corsair Vengeance RGB DDR5-6000 CL30 (CMH64GX5M2B6000Z30)
+  model: Corsair Vengeance RGB DDR5-6000 CL30
+  mpn: CMH64GX5M2B6000Z30
   config: 4x32 GB Dual Channel (2 kits)
 
 storage:
   - model: Crucial T705 2 TB NVMe (PCIe 5.0, 14.5 GB/s read)
-    pn: CT2000T705SSD3
+    mpn: CT2000T705SSD3
   - model: WD_BLACK SN7100 2 TB NVMe (PCIe 4.0)
-    pn: WDS200T4X0E
+    mpn: WDS200T4X0E
 
 network:
   wifi: Wi-Fi 7 (Qualcomm FastConnect 7800)
 
 monitors:
-  - Dell U2724D 27" QHD 120Hz IPS Black (DisplayPort)
-  - Dell U2724D 27" QHD 120Hz IPS Black (HDMI)
+  - model: Dell U2724D 27" QHD 120Hz IPS Black (DisplayPort)
+    mpn: 210-BKVH
+  - model: Dell U2724D 27" QHD 120Hz IPS Black (HDMI)
+    mpn: 210-BKVH
 
 peripherals:
   keyboard:
@@ -75,7 +85,8 @@ peripherals:
   mouse:
     model: ProtoArc EM11 NL Vertical Ergonomic (Bluetooth + 2.4GHz, 3-device)
   headset:
-    model: HyperX Cloud Alpha Wireless 2 (2.4GHz / Bluetooth, 53mm drivers)
+    model: HyperX Cloud Alpha 2 Wireless (2.4GHz + Bluetooth, RGB base, 53mm drivers, 250h)
+    mpn: AJ5C7AA
 ```
 
 ```yaml
@@ -101,11 +112,11 @@ earbuds:
   battery: 4h (20h with case)
 
 charger:
-  model: Anker 100W USB-C GaN (3-port, smart display, touch control)
+  model: Anker Charger 100W USB-C GaN (3-port, smart display, touch control)
+  mpn: A121B
   asin: B0FG77P8RR
 
 bag:
   model: MOSISO Laptop Shoulder Bag 15.6" (Briefcase, 2 raised + 1 flap + 1 horizontal pocket)
   asin: B09J19C59Y
 ```
-
