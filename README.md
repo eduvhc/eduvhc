@@ -119,4 +119,42 @@ charger:
 bag:
   model: MOSISO Laptop Shoulder Bag 15.6" (Briefcase, 2 raised + 1 flap + 1 horizontal pocket)
   asin: B09J19C59Y
+
+internet:
+  isp: Starlink
+```
+
+```yaml
+# server.yml
+host:
+  hostname: pwuserver
+  os: Ubuntu 24.04 LTS (Noble Numbat)
+  kernel: Linux 6.8
+
+cpu:
+  model: Intel N100
+  cores: 4
+  base_clock_ghz: 2.8
+  boost_clock_ghz: 3.4
+  tdp_w: 6
+
+gpu: Intel UHD (Alder Lake-N integrated)
+
+memory: 16 GB
+
+storage:
+  - 512 GB SSD (system)
+  - 465 GB Samsung 860 EVO SSD
+  - 1.8 TB HDD (bulk storage)
+
+network:
+  lan: 1 GbE
+  vpn: Tailscale
+
+services:
+  - Docker + containerd
+  - Pi-hole (DNS / ad-block)
+  - LocalStack (AWS emulator)
+  - OpenObserve (logs / observability)
+  - ps3netsrv
 ```
