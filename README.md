@@ -72,3 +72,26 @@ peripherals:
   headset: HyperX Cloud Alpha Wireless 2 (2.4GHz / Bluetooth)
 ```
 
+```yaml
+# cross-platform.yml
+mobile:
+  model: iPhone 17 (Black, base)
+  chip: Apple A19 (3nm, 6-core CPU, 5-core GPU)
+  memory: 8 GB RAM
+  storage: 256 GB
+
+headphones:
+  model: Sony WH-1000XM6
+  processor: HD Noise Canceling QN3 (12 mics, AI-adaptive ANC)
+  codecs: LDAC, Hi-Res Audio Wireless
+  bluetooth: 5.3 (multipoint)
+  battery: 30h
+
+earbuds:
+  model: AirPods 4 with ANC
+  chip: Apple H2
+  features: ANC, Adaptive Audio, Transparency, Spatial Audio
+  rating: IP54
+  battery: 4h (20h with case)
+```
+
