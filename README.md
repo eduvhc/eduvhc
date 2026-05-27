@@ -13,11 +13,8 @@ Software engineer building .NET microservices platforms.
 ![SQL Server](https://img.shields.io/badge/SQL_Server-CC2927?style=flat&logo=microsoftsqlserver&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
 
----
-
-#### Machine
-
 ```yaml
+# machine.yml
 device:
   model: MacBook Pro (2025)
   chip: Apple M5
