@@ -56,8 +56,10 @@ ram:
   config: 4x32 GB Dual Channel (2 kits)
 
 storage:
-  - Crucial T705 2 TB (PCIe 5.0, 14.5 GB/s read)
-  - WD_BLACK SN7100 2 TB (PCIe 4.0)
+  - model: Crucial T705 2 TB NVMe (PCIe 5.0, 14.5 GB/s read)
+    pn: CT2000T705SSD3
+  - model: WD_BLACK SN7100 2 TB NVMe (PCIe 4.0)
+    pn: WDS200T4X0E
 
 network:
   wifi: Wi-Fi 7 (Qualcomm FastConnect 7800)
@@ -67,9 +69,13 @@ monitors:
   - Dell U2724D 27" QHD 120Hz IPS Black (HDMI)
 
 peripherals:
-  keyboard: RK ROYAL KLUDGE M87 (75% gasket, hot-swap, wireless)
-  mouse: ProtoArc EM11 vertical ergonomic (Bluetooth + 2.4GHz)
-  headset: HyperX Cloud Alpha Wireless 2 (2.4GHz / Bluetooth)
+  keyboard:
+    model: RK ROYAL KLUDGE M87 (75% gasket, hot-swap, wireless)
+    asin: B0D3LNKQ3W
+  mouse:
+    model: ProtoArc EM11 NL Vertical Ergonomic (Bluetooth + 2.4GHz, 3-device)
+  headset:
+    model: HyperX Cloud Alpha Wireless 2 (2.4GHz / Bluetooth, 53mm drivers)
 ```
 
 ```yaml
@@ -96,5 +102,10 @@ earbuds:
 
 charger:
   model: Anker 100W USB-C GaN (3-port, smart display, touch control)
+  asin: B0FG77P8RR
+
+bag:
+  model: MOSISO Laptop Shoulder Bag 15.6" (Briefcase, 2 raised + 1 flap + 1 horizontal pocket)
+  asin: B09J19C59Y
 ```
 
