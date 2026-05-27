@@ -43,9 +43,12 @@ cpu:
   boost_clock_mhz: 5700
 
 gpu:
-  model: Sapphire NITRO+ Radeon RX 9070 XT
+  model: Sapphire NITRO+ Radeon RX 9070 XT Gaming OC
   architecture: RDNA 4
   vram: 16 GB GDDR6
+
+case: Corsair Frame 4000D (Mid-Tower ATX, high airflow)
+psu: Corsair RM1000e 1000W (ATX 3.1, Cybenetics Gold, fully modular)
 
 ram:
   total: 128 GB
